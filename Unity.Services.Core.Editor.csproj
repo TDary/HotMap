@@ -64,9 +64,9 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\Linker\Models\XmlLinkerModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\UserRoleManagement\IUserRoleRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\UiHelpers\OfflineUiHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\EditorGameService\EditorGameServiceDashboardHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\UiHelpers\LoggedOutUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\Shared\DependencyInversion\ServiceProvider.Gen.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\EditorGameService\EditorGameServiceDashboardHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\EditorGameService\Analytics\EditorGameServiceAnalyticsSender.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\UiHelpers\AccessTokenErrorUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\CloudEnvironment\CloudEnvironmentConfigProvider.cs" />
@@ -96,8 +96,8 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\Telemetry\PackageConfig.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\EditorGameService\IEditorGameServiceIdentifier.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\EditorGameService\EditorGameServiceSettingsProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\Linker\LinkFileGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\UiHelpers\PlatformSupportUiHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\Linker\LinkFileGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\Shared\Clients\AdminApiHeaders.Gen.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\UiHelpers\UserRoleRequestUiHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\UiHelpers\ExceptionHelper.cs" />
@@ -127,8 +127,8 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\Linker\Models\XmlLinkedProperty.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\UserRoleManagement\UserRoleHandler.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\ProjectBindRedirect\ProjectBindRedirectUiConstants.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\ProjectStateManagement\ProjectStateRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\Linker\Models\XmlLinkedEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\ProjectStateManagement\ProjectStateRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\ProjectBindRedirect\ProjectBindRedirectProjectSettingsUi.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\Networking\JsonWebToken.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.0\Editor\Core\Utils\AccessTokensSingleton.cs" />
@@ -444,26 +444,35 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>G:\Unity2022\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>G:\HotMap\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>G:\HotMap\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
@@ -471,17 +480,8 @@
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>G:\HotMap\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>G:\HotMap\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

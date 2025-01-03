@@ -48,8 +48,8 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Editor\Analytics\Helpers\GenericEditorFieldEditEventSenderHelpers.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Editor\AppStoreExtensionMethods.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Editor\GooglePlayProductCatalogExporter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Editor\Analytics\Signatures\SignatureDefinitions.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Editor\CodelessIAPButtonEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Editor\Analytics\Signatures\SignatureDefinitions.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Editor\Analytics\Events\IEditorAnalyticsEvent.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Editor\Obfuscation\Service\ObfuscationGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Editor\Analytics\Events\GenericEditorClickCheckboxEvent.cs" />

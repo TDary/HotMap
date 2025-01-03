@@ -384,7 +384,10 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -analyzer:"G:/Unity2022/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"G:/Unity2022/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/FpsCounter.cs"
 "Assets/Scripts/HotmapData.cs"
+"Assets/Scripts/PerformanceData.cs"
+"Assets/Scripts/ScenePoint.cs"
 -langversion:9.0
 
 /deterministic

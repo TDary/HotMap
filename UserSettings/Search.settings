@@ -8,6 +8,9 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+	"last_search.D379D912" = "store:"
+	"OpenInspectorPreview.D379D912" = "0"
+	"currentGroup.D379D912" = "all"
 }
 providers = {
 	log = {
@@ -59,6 +62,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"store:"
 ]
 searchItemFavorites = [
 ]
@@ -69,7 +73,7 @@ expandedQueries = [
 ]
 queryBuilder = false
 ignoredProperties = "id;name;classname;imagecontentshash"
-helperWidgetCurrentArea = "all"
+helperWidgetCurrentArea = "store:"
 disabledIndexers = ""
 minIndexVariations = 2
 findProviderIndexHelper = true

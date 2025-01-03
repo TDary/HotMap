@@ -45,6 +45,9 @@
     <Analyzer Include="G:\Unity2022\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\FpsCounter.cs" />
+    <Compile Include="Assets\Scripts\ScenePoint.cs" />
+    <Compile Include="Assets\Scripts\PerformanceData.cs" />
     <Compile Include="Assets\Scripts\HotmapData.cs" />
     <None Include="Library\PackageCache\com.unity.ads@4.4.2\Plugins\iOS\UnityAdsUnityWrapper.m" />
     <None Include="Library\PackageCache\com.unity.ads@4.4.2\Plugins\iOS\UnityBannerUnityWrapper.m" />
@@ -391,23 +394,23 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>G:\Unity2022\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>G:\HotMap\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Tracker.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>G:\HotMap\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-      <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Editor.dll</HintPath>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>G:\HotMap\Library\PackageCache\com.unity.analytics@3.8.1\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>G:\Unity2022\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -833,25 +836,25 @@
       <Project>{56f16a9a-5529-957f-0b1c-3345671744ce}</Project>
       <Name>UnityEngine.Purchasing.Codeless</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.Purchasing.csproj">
-      <Project>{de21309d-97c3-b5ac-caa9-97ca10ddcae1}</Project>
-      <Name>UnityEditor.Purchasing</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{a9eb67cc-e716-6656-b60c-bca4e749b0ae}</Project>
       <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.Purchasing.csproj">
+      <Project>{de21309d-97c3-b5ac-caa9-97ca10ddcae1}</Project>
+      <Name>UnityEditor.Purchasing</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
       <Project>{68501ecc-2105-2371-72fb-249f238dfc8d}</Project>
       <Name>Unity.Services.Core.Analytics</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{d88bac36-fa30-d1ce-8ed1-90e31386c60a}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
       <Project>{1053fa3b-7dff-f2a0-5cd7-12f35608754d}</Project>
       <Name>Unity.AI.Navigation.Editor.ConversionSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{d88bac36-fa30-d1ce-8ed1-90e31386c60a}</Project>
+      <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.csproj">
       <Project>{fa2a1197-c332-afd4-702d-1fb911f368f3}</Project>
@@ -885,17 +888,13 @@
       <Project>{7bf1a922-1723-456e-f754-e6cf7514d25e}</Project>
       <Name>Unity.VisualScripting.Shared.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{043ee632-fbb5-d172-b400-b9197ef68988}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Purchasing.Common.csproj">
-      <Project>{f3381a51-8020-7351-7719-24409841d8ed}</Project>
-      <Name>Purchasing.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
       <Project>{b25884f4-8b71-42e2-398c-65122488c53b}</Project>
       <Name>UnityEditor.SpatialTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{043ee632-fbb5-d172-b400-b9197ef68988}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{22f6e128-2942-e3b6-9159-3660894306f6}</Project>
@@ -905,13 +904,9 @@
       <Project>{4af3e8f8-2e10-b391-86d2-2649cc5668cc}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{00c25f6a-7909-8227-f95d-9b4588afa3fb}</Project>
-      <Name>UnityEngine.SpatialTracking</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{317b7eff-08af-9dc8-bdcb-ab3d16ab8a4c}</Project>
-      <Name>UnityEngine.UI</Name>
+    <ProjectReference Include="UnityEngine.Advertisements.Editor.csproj">
+      <Project>{d130dc99-85b1-93f4-c90b-ea6f58e31215}</Project>
+      <Name>UnityEngine.Advertisements.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
       <Project>{0ac5fba7-37a2-e7ca-1443-5c3824726b76}</Project>
@@ -921,13 +916,21 @@
       <Project>{c7cbbe6b-e980-c2ee-5cf6-70ed11908b66}</Project>
       <Name>Analytics</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.Advertisements.Editor.csproj">
-      <Project>{d130dc99-85b1-93f4-c90b-ea6f58e31215}</Project>
-      <Name>UnityEngine.Advertisements.Editor</Name>
+    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
+      <Project>{00c25f6a-7909-8227-f95d-9b4588afa3fb}</Project>
+      <Name>UnityEngine.SpatialTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{317b7eff-08af-9dc8-bdcb-ab3d16ab8a4c}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
       <Project>{0309d190-0501-d2b7-9aa4-be58a3dbda3f}</Project>
       <Name>UnityEditor.XR.LegacyInputHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="Purchasing.Common.csproj">
+      <Project>{f3381a51-8020-7351-7719-24409841d8ed}</Project>
+      <Name>Purchasing.Common</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
       <Project>{22097555-c4a9-6331-7e92-2b976a2ce9b7}</Project>

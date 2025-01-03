@@ -188,8 +188,8 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\Interfaces\Services\IGooglePlayStoreFinishTransactionService.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\AppleAppStore\IAppleConfiguration.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\BaseStore\NativeStoreProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\UDP\UDPBindings.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\AAR\Models\GoogleBillingResult.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\UDP\UDPBindings.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\AAR\GoogleFinishTransactionService.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\AAR\Interfaces\IGoogleFinishTransactionService.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\Interfaces\IGooglePlayStoreExtensions.cs" />
